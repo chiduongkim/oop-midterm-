@@ -1,0 +1,25 @@
+import java.util.*
+public interface Signal {
+    double getAmplitude();
+}
+class DiscreteSignal implements Signal {
+    private double amplitude;
+
+    public DiscreteSignal(double amplitude) {
+        this.amplitude = amplitude;
+    }
+    @Override
+    public double getAmplitude() { 
+        return amplitude; 
+    }
+}
+class ContinuousSignal implements Signal {
+    private double amplitude;
+    public ContinuousSignal(double amplitude) {
+        this.amplitude = amplitude;
+    }
+    @Override
+    public double getAmplitude() { 
+        return amplitude; 
+    }
+}
